@@ -1,5 +1,7 @@
 package test.java;
 
+import java.beans.Transient;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -7,6 +9,7 @@ import main.java.Rectangle;
 
 public class ShapeTest {
     @Test
+    // add test for area of rectangle
     public void testRectangleArea() {
         Rectangle rectangle = new Rectangle(8, 10);
         Assert.assertEquals(80, rectangle.area());
@@ -41,4 +44,27 @@ public class ShapeTest {
         rectangle.setHeight(5);
         Assert.assertEquals(40, rectangle.area());
     }
+
+    @Test
+    // add test for area of square
+    public void testSquareArea() {
+        Square square = new Square(5);
+        Assert.assertEquals(25, square.area());
+    }
+
+    @Test
+    // add test for getter of edge
+    public void testSquareEdge() {
+        Square square = new Square(5);
+        Assert.assertEquals(5, square.getEdge());
+    }
+
+    @Test
+    // add test for setter of edge
+    public void testSquareSetEdge() {
+        Square square = new Square(5);
+        square.setEdge(10);
+        Assert.assertEquals(100, square.area());
+    }
+    
 }
