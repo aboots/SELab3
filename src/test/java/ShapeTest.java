@@ -1,11 +1,10 @@
 package test.java;
 
-import java.beans.Transient;
-
 import org.junit.Assert;
 import org.junit.Test;
 
 import main.java.Rectangle;
+import main.java.Square;
 
 public class ShapeTest {
     @Test

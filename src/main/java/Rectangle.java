@@ -1,6 +1,6 @@
 package main.java;
 
-public class Rectangle{
+public class Rectangle extends Shape {
     private int width;
     private int height;
 
@@ -25,6 +25,7 @@ public class Rectangle{
         return this.height;
     }
 
+    @Override
     public int area() {
         return this.width * this.height;
     }
