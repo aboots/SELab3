@@ -3,6 +3,8 @@ package test.java;
 import org.junit.Assert;
 import org.junit.Test;
 
+import main.java.Rectangle;
+
 public class ShapeTest {
     @Test
     public void testRectangleArea() {
